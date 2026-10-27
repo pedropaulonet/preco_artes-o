@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#344e41">
+  <meta name="description" content="Calcule o preço do seu trabalho artesanal. Seus dados ficam no seu navegador, com backup em JSON.">
+  <title>Preço Artesão — Seu trabalho tem valor</title>
+  <link rel="icon" href="./assets/icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./src/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Ir para o conteúdo</a>
+  <aside class="sidebar" aria-label="Menu principal">
+    <a class="brand" href="#painel"><span class="brand-symbol" aria-hidden="true">a<span>✳</span></span><span>preço<span class="brand-second">artesão<span class="brand-dot">.</span></span></span></a>
+    <p class="sidebar-caption">FEITO À MÃO. COM VALOR.</p>
+    <nav id="navigation" aria-label="Navegação"></nav>
+    <div class="sidebar-bottom"><span class="local-indicator"></span><strong>Seu ateliê, seus dados</strong><p>Salvos neste navegador.<br>Sem conta, sem nuvem.</p><a href="#ajuda">Como funciona →</a></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><span id="shop-label">Meu ateliê</span><span class="storage-status" id="storage-status" role="status">Abrindo banco local…</span></header>
+    <aside class="backup-reminder" aria-label="Lembrete de backup"><span class="backup-symbol" aria-hidden="true">↧</span><div><strong>Seu trabalho merece uma cópia de segurança.</strong><span> Faça backup em JSON. Limpar os dados do navegador pode apagar seus cadastros.</span></div><button class="text-button" type="button" data-action="export">Fazer backup <span aria-hidden="true">↗</span></button></aside>
+    <main id="main" tabindex="-1"><div class="loading-state">Preparando seu ateliê…</div></main>
+    <footer>Preço Artesão <span>•</span> Feito para quem faz com as mãos. <a href="#backup">Lembre-se de fazer backup.</a></footer>
+  </div>
+  <div id="toast" role="status" aria-live="polite" hidden></div>
+  <dialog id="modal" aria-labelledby="modal-title"></dialog>
+  <noscript>Ative o JavaScript para usar a calculadora e o banco de dados local.</noscript>
+</body>
+</html>

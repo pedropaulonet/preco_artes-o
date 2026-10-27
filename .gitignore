@@ -1,0 +1,17 @@
+# Local tools and credentials
+.agents/
+.codex/
+.aws/
+.superpowers/
+
+# Python test runner
+__pycache__/
+*.py[cod]
+
+# Private business backups must stay out of source control
+backups/
+preco-artesao-backup-*.json
+
+# Local diagnostics
+core
+core.*
